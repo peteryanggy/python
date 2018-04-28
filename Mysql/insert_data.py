@@ -8,7 +8,11 @@ try:
     cursor = db.cursor()
 
     sql = '''INSERT INTO EMPLOYEE(FIRST_NAME, LAST_NAME, AGE, SEX, INCOME) 
-    VALUES('Mac', 'Mohan', 20, 'M', 3000)'''
+    VALUES
+    ('Mac_1', 'Mohan', 20, 'M', 3000),
+    ('Mac_2', 'Mohan', 30, 'F', 4000),
+    ('Mac_3', 'Mohan', 34, 'F', 5000),
+    ('Mac_4', 'Mohan', 31, 'M', 3500)'''
 
     cursor.execute(sql)
     db.commit()
